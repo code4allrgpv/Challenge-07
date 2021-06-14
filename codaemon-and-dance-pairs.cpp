@@ -5,21 +5,13 @@ using namespace std;
 
 ll int ans(ll int a, ll int b)
 {
-    ll int ans = 0;
-
-     
-    for (ll int i = 1; i <= a; i++) {
-       
-        ans += b / 5;
-
-        
-       
-        if(i%5 + b%5 >=5)
+    ll int ans = 0;     
+    for (ll int i = 1; i <= a; i++)
+    {   
+        ans += b / 5; 
+        if(i % 5 + b % 5 >= 5)
             ans += 1;
-        else{}
-    }
-
-    
+    }    
     return ans;
 }
 
